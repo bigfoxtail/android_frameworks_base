@@ -2417,6 +2417,10 @@ class DatabaseHelper extends SQLiteOpenHelper {
             loadIntegerSetting(stmt, Settings.System.POINTER_SPEED,
                     R.integer.def_pointer_speed);
 
+
+            loadBooleanSetting(stmt, Settings.System.SETUP_WIZARD_HAS_RUN,
+                    R.bool.def_setup_wizard_has_run);
+
             /*
              * IMPORTANT: Do not add any more upgrade steps here as the global,
              * secure, and system settings are no longer stored in a database

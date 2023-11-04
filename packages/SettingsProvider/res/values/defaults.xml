@@ -83,7 +83,7 @@
     <string name="def_wireless_charging_started_sound" translatable="false">/system/media/audio/ui/WirelessChargingStarted.ogg</string>
 
     <bool name="def_lockscreen_disabled">false</bool>
-    <bool name="def_device_provisioned">false</bool>
+    <bool name="def_device_provisioned">true</bool>
     <integer name="def_dock_audio_media_enabled">1</integer>
 
     <!-- Notifications use ringer volume -->
@@ -180,7 +180,7 @@
     <integer name="def_max_dhcp_retries">9</integer>
 
     <!-- Default for Settings.Secure.USER_SETUP_COMPLETE -->
-    <bool name="def_user_setup_complete">false</bool>
+    <bool name="def_user_setup_complete">true</bool>
 
     <!-- Default for Settings.Global.LOW_BATTERY_SOUND_TIMEOUT.
          0 means no timeout; battery sounds will always play
@@ -299,4 +299,7 @@
     <string name="def_enable_input_methods" translatable="false"></string>
     <!-- Default for Settings.Global.CAPTIVE_PORTAL_DETECTION_ENABLED -->
     <integer name="def_captive_portal_detection_enabled" translatable="false">1</integer>
+
+    <bool name="def_setup_wizard_has_run">true</bool>
+
 </resources>
