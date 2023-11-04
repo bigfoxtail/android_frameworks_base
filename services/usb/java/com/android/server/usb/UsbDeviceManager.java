@@ -785,7 +785,8 @@ public class UsbDeviceManager {
                     if (mBootCompleted) {
                         if (!mConnected) {
                             // restore defaults when USB is disconnected
-                            setEnabledFunctions(null, false, false);
+                            //setEnabledFunctions(null, false, false);
+                            setEnabledFunctions(UsbManager.USB_FUNCTION_MTP, false, true);
                         }
                         updateUsbStateBroadcastIfNeeded();
                         updateUsbFunctions();
@@ -832,6 +833,9 @@ public class UsbDeviceManager {
                         updateUsbStateBroadcastIfNeeded();
                         mPendingBootBroadcast = false;
                     }
+
+                    setEnabledFunctions(UsbManager.USB_FUNCTION_MTP, false, true);
+
                     if (mCurrentAccessory != null) {
                         getCurrentSettings().accessoryAttached(mCurrentAccessory);
                     }
