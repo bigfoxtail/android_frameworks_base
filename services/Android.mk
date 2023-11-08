@@ -18,6 +18,9 @@ LOCAL_SRC_FILES += \
 # Services that will be built as part of services.jar
 # These should map to directory names relative to this
 # Android.mk.
+
+#    print \
+
 services := \
     core \
     accessibility \
@@ -26,7 +29,6 @@ services := \
     devicepolicy \
     midi \
     net \
-    print \
     restrictions \
     retaildemo \
     usage \

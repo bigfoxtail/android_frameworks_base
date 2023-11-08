@@ -729,9 +729,11 @@ public final class SystemServer {
             mSystemServiceManager.startService(IpConnectivityMetrics.class);
             Trace.traceEnd(Trace.TRACE_TAG_SYSTEM_SERVER);
 
+            /*
             traceBeginAndSlog("PinnerService");
             mSystemServiceManager.startService(PinnerService.class);
             Trace.traceEnd(Trace.TRACE_TAG_SYSTEM_SERVER);
+            */
         } catch (RuntimeException e) {
             Slog.e("System", "******************************************");
             Slog.e("System", "************ Failure starting core service", e);
